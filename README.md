@@ -125,3 +125,8 @@ Generate from a text file with one FEN per line:
 ```bash
 wuzzle-cli text _ --file puzzles.txt
 ```
+
+## Licensing
+
+- Code: MIT License (see LICENSE).
+- Data: The Lichess puzzle database is licensed CC BY-SA 4.0 and is not included in this repo. If you distribute derived data, you must comply with CC BY-SA 4.0.
