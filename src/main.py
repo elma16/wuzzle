@@ -14,7 +14,7 @@ from fen2tex import fen2tex, fen2png
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_DATA_DIR = ROOT_DIR / "data"
 DEFAULT_OUTPUT_DIR = ROOT_DIR / "output"
-DEFAULT_LICHESS_DB = DEFAULT_DATA_DIR / "0positions/csv-fen/lichess_db_puzzle.csv"
+DEFAULT_LICHESS_DB = DEFAULT_DATA_DIR / "lichess_db_puzzle.csv"
 DEFAULT_THEMES_FILE = DEFAULT_DATA_DIR / "themes-unique.txt"
 DEFAULT_STOCKFISH_PATH = os.environ.get("STOCKFISH_PATH")
 

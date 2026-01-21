@@ -3,7 +3,7 @@ import csv
 from pathlib import Path
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-DEFAULT_LICHESS_DB = ROOT_DIR / "data/0positions/csv-fen/lichess_db_puzzle.csv"
+DEFAULT_LICHESS_DB = ROOT_DIR / "data/lichess_db_puzzle.csv"
 DEFAULT_OUT = ROOT_DIR / "data/themes-unique.txt"
 
 

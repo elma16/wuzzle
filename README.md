@@ -26,7 +26,7 @@ pip install -e ".[country]"
 
 The Lichess puzzle database and themes list are not included in this repo.
 
-- Default Lichess DB path: `data/0positions/csv-fen/lichess_db_puzzle.csv`
+- Default Lichess DB path: `data/lichess_db_puzzle.csv`
 - Default themes file: `data/themes-unique.txt`
 
 Use `--data-dir`, `--lichess-db`, or `--themes-file` to point at your local copies.
@@ -54,8 +54,8 @@ unzstd lichess_db_puzzle.csv.zst
 4. Move it into place:
 
 ```bash
-mkdir -p data/0positions/csv-fen
-mv lichess_db_puzzle.csv data/0positions/csv-fen/lichess_db_puzzle.csv
+mkdir -p data
+mv lichess_db_puzzle.csv data/lichess_db_puzzle.csv
 ```
 
 5. Generate the theme list:
