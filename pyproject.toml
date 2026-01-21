@@ -32,7 +32,6 @@ py-modules = [
   "main",
   "fen2tex",
   "csv2fen",
-  "pgn2csv",
   "pgn_splitter",
   "lichess_themes",
 ]
