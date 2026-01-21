@@ -61,7 +61,7 @@ mv lichess_db_puzzle.csv data/0positions/csv-fen/lichess_db_puzzle.csv
 5. Generate the theme list:
 
 ```bash
-wuzzle-themes --lichess-db data/0positions/csv-fen/lichess_db_puzzle.csv --out data/themes-unique.txt
+wuzzle-themes --lichess-db path/to/lichess_db_puzzle.csv --out data/themes-unique.txt
 ```
 
 Make sure you comply with the Lichess database license (see the Lichess database page for details).
