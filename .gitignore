@@ -1,0 +1,8 @@
+*.DS_Store
+data
+*.egg-info
+output
+src/fenmaker
+**__pycache__**
+.venv/
+build/

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wuzzle"
+version = "0.1.0"
+description = "Chess puzzle sheet generator"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "cairosvg",
+  "pandas",
+  "Pillow",
+  "python-chess",
+]
+authors = [
+  { name = "Elliott Macneil", email = "ucabem1@ucl.ac.uk" }
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+country = ["pycountry"]
+
+[project.scripts]
+wuzzle-cli = "main:main"
+wuzzle-themes = "lichess_themes:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "main",
+  "fen2tex",
+  "csv2fen",
+  "pgn2csv",
+  "pgn_splitter",
+  "utils",
+  "country",
+  "lichess_themes",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
