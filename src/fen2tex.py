@@ -40,22 +40,6 @@ def fen2png(fen_string, img_name):
     pil_image.save(img_name)
 
 
-def fen2pngCustom(fen_string, img_name, svg_dir):
-    custom_pieces = {}
-    custom_pieces[chess.Piece(chess.PAWN, chess.WHITE)] = open("white_pawn.svg", "rb").read()
-    custom_pieces[chess.Piece(chess.KNIGHT, chess.WHITE)] = open("white_knight.svg", "rb").read()
-    # ...add the rest of the pieces
-
-    board = chess.Board(fen=fen_string)
-    _ = chess.svg.board(
-        board=board,
-        orientation=board.turn,
-        pieces=custom_pieces,
-        colors={"inner border": "#15781B80"},
-    ).encode("UTF-8")
-    return 0
-
-
 def _puzzle_index(path_obj):
     try:
         return int(path_obj.stem.split("_")[1])

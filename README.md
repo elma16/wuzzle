@@ -16,12 +16,6 @@ For tests:
 pip install -e ".[test]"
 ```
 
-Optional country helpers:
-
-```bash
-pip install -e ".[country]"
-```
-
 ## Data
 
 The Lichess puzzle database and themes list are not included in this repo.

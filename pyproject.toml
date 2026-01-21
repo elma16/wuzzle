@@ -21,7 +21,6 @@ authors = [
 
 [project.optional-dependencies]
 test = ["pytest"]
-country = ["pycountry"]
 
 [project.scripts]
 wuzzle-cli = "main:main"
@@ -35,8 +34,6 @@ py-modules = [
   "csv2fen",
   "pgn2csv",
   "pgn_splitter",
-  "utils",
-  "country",
   "lichess_themes",
 ]
 
